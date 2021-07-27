@@ -1,0 +1,81 @@
+.header{position:relative; padding:8px 5%; border-bottom:2px solid #84c64b;}
+
+.logo{float: left;}
+.logo a{
+    display:block;
+}
+.logo a img{width:200px; height: auto;}
+
+/* 모바일 gnb 출력 */
+.gnb{
+    display:none;/* 토글누르면 나타나도록 스크립트 추가 */
+    position:absolute;
+    width:100%;
+    left:0; top:100%;
+    background-color:#84c64b;
+    z-index:15;
+}
+
+.gnb ul li{border-bottom:1px solid rgb(57, 165, 57);}
+.gnb ul li a{
+    display:block;
+    padding:14px 0 14px 30px;
+    font-size:14px;
+    color:#fff;
+}
+
+
+.menu_toggle_btn{
+    display:block;
+    float:right; 
+    width:20px; 
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
+}
+.menu_toggle_btn span{
+    display:block;
+    width:100%; height:2px;
+    background-color:#84c64b;
+}
+.menu_toggle_btn span:nth-child(2){
+    margin:5px 0;
+}
+
+hr{border-color:#84c64b; margin:0;}
+
+
+@media all and (min-width:768px){/* 768이상부터 적용될 css */
+
+    
+    .logo a{padding:5px;}
+    .logo a img{width:200px; height: auto;}
+
+
+    .gnb{
+        float:right;
+        display:block !important;
+        background-color:#fff;
+        position:relative;
+        width:auto;
+        padding:10px;
+    }
+    
+    .gnb ul li{
+        float:left;
+        margin-left:20px;
+        border-bottom:none;
+    }
+    .gnb ul li a{
+        display:inline-block;
+        padding:10px 0;
+        color:#222;
+        font-size:16px;
+    }
+
+
+    .menu_toggle_btn{display:none;}
+
+}

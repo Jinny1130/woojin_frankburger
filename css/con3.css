@@ -1,0 +1,76 @@
+.con3_first>img, .con3_second>img{width:100%; height:370px;}
+.con3_tit{margin:10px 0; width:100%; height: 370px; padding: 10px 30px;
+    box-sizing: border-box;}
+.con3_tit h2{font:300 30px/1.3 'NotoSansL'; color:#000;}
+.con3_tit h2>span{font: 30px/1.3 'NotoSansM'; color:#000; position:relative;}
+.con3_tit h2>span:after { content: ''; display: block; width: 100%; height: 1px; position: absolute; bottom: 2px; left: 1px; background: #000; }
+
+
+.con3_tit1{text-align:right;}
+
+.hashtag{margin:40px 0; float:right; margin-left:7%;}
+.hashtag li{
+    border:2px solid #74c137;
+    border-radius: 30px;
+    width:140px;
+    text-align: center;
+    padding: 4px 0;
+    float: right;
+    margin:5px;
+}
+.hashtag li.short{width:95px;}
+.hashtag li.midium{width:115px;}
+.hashtag li a{display:block; font:400 22px/1.3 'NotoSansR'; color:#000;}
+
+.moreBtn{width:40%; margin-top:70px;}
+.moreBtn span{float:left; width:60%; font:400 16px/1.3 'NotoSansR'; color:#000;}
+.moreBtn img{float:left; padding:3px;}
+
+
+
+@media all and (min-width:768px){
+    .con3_section{margin:100px auto;}
+
+    .con3_first>img, .con3_second>img{float:left; width:50%; height:370px;}
+    .con3_tit{margin:0; width:50%; height: 370px;}
+
+    .con3_first>img, .con3_tit1{float: left;}
+    .con3_second>img, .con3_tit2{float:right;}
+
+    .con3_tit1{padding-top:15px;}
+    .con3_tit2{padding-top:40px;}
+
+    .hashtag li{width:145px; margin:7px 8px;}
+    .hashtag li.short{width:100px;}
+    .hashtag li.midium{width:110px;}
+
+    
+    
+
+
+
+
+}
+
+
+@media all and (min-width:1132px){
+
+    .con3_section{margin:130px auto;}
+    .con3_first>img, .con3_second>img{width:50%; height:auto;}
+    
+    .con3_first>img{float:left;}
+    .con3_tit1{float:left; margin:50px 0; width:50%; height: 474px; margin:0;}
+
+    .con3_second>img{float:right;}
+    .con3_tit2{float:right;}
+
+    .con3_tit h2{font-size:40px;}
+    .con3_tit h2>span{font-size:40px;}
+    .hashtag li a{font-size:26px;}
+
+
+    .hashtag li{width:170px; margin:7px 10px;}
+    .hashtag li.short{width:110px;}
+    .hashtag li.midium{width:130px;}
+
+}

@@ -1,0 +1,20 @@
+.container{
+    width:90%;
+    max-width:1132px;
+    margin:0 auto;
+}
+
+/* 플롯해제 */
+/* 플롯해제 시켜줄 대상에게 클리어픽스 클래스 지정 안먹는 오류 발생시 그 특정대상에 에프터 다시 적용하면댐 */
+.clearfix::after{content:''; display:block; clear:both;}
+
+/* 숨김요소 */
+/* 태그는 있지만 안보이게 설정해줄 대상에게 적용해줄 공통 클래스 */
+.blind{
+    position:absolute;
+    width:0;
+    height:0;
+    line-height:0;
+    text-indent:-9999px;
+    overflow:hidden;
+}
